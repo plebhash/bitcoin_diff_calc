@@ -1,0 +1,19 @@
+[package]
+name = "bitcoin_diff_calc"
+description = "a convenient toolkit for calculations on Bitcoin mining difficulty"
+authors = ["plebhash <plebhash@proton.me>"]
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/plebhash/bitcoin_diff_calc"
+license = "GPL-3.0-only"
+
+[dependencies]
+num-bigint = "0.4"
+num-traits = "0.2"
+bigdecimal = "0.4"
+hex = "0.4.3"
+clap = { version = "4.1", features = ["derive"] }
+
+[[bin]]
+name = "bitcoin_diff_calc"
+path = "src/main.rs"
